@@ -53,13 +53,14 @@ img {
 }
 
 a {
+  display: inline-block;
   padding: 10px 30px;
+  margin: 20px 20px;
   background-color: rgb(71, 180, 144, 0.5);
   text-decoration: none;
   color: white;
   
 }
-
 a:hover {
   background-color: darkgrey;
 }
