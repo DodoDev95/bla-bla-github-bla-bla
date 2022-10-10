@@ -1,0 +1,51 @@
+* {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ height: 100vh;
+}
+
+.registrationForm {
+  margin: auto;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid lightgrey;
+}
+
+
+input, label {
+  display: block;
+}
+
+input {
+  margin-bottom: 10px;
+}
+
+.radioButtons input, label{
+ display: inline-block;
+}
+
+.parTos {
+  display: inline-block;
+}
+#tos {
+  display: inline-block;
+}
+
+
+.username, .password {
+  display: none;
+}
+
+input[type="password"]:focus + .password{
+  display: block;
+  width: 300px;
+}
+
+#username:focus + .username {
+  display: block;
+  width: 300px;
+}
