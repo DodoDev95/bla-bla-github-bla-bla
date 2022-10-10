@@ -37,13 +37,7 @@
         required
       />
       <label for="email_2">Please repeat your email</label>
-      <input
-        type="email"
-        name="email_2"
-        id="email_2"
-        pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
-        required
-      />
+      <input type="email" name="email_2" id="email_2" required />
       <label for="pass">Enter your password</label>
       <input
         type="password"
@@ -58,7 +52,8 @@
         lowercase letter and one number.
       </p>
       <label for="pass_2">Confirm your password</label>
-      <input type="password" name="pass_2" id="pass_2" required />
+      <input type="password" name="pass_2" id="pass_2"
+      pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,} required />
       <div class="radioButtons">
         <label for="male">Male</label>
         <input type="radio" name="gender" id="male" value="Male" />
