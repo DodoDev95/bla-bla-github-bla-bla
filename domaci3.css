@@ -1,0 +1,45 @@
+* {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url(./kokolinda.webp);
+  
+}
+div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(2, 26, 120, 0.6);
+margin: 0;
+padding: 0;
+width: 100vw;
+height: 100vh;
+}
+
+h1, h3 {
+
+color: white;
+}
+
+legend {
+  font-size: 2em;
+}
+fieldset {
+  color: white;
+  text-align: center;
+}
+
+#glasaj {
+  background-color: rgb(32, 32, 255);
+  padding: 10px 20px;
+  border-radius: 5px;
+  border-color: white;
+}

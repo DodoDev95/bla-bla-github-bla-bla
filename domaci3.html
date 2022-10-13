@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homework 3</title>
+    <link rel="stylesheet" href="./domaci3.css" />
+  </head>
+  <body>
+    <div>
+      <h1>GLASAJ ODMAH.</h1>
+      <h3>
+        Ovaj glasački sistem je potpuno anoniman. Budite promjena koju želite
+        vidjeti!
+      </h3>
+      <form
+        action="#"
+        method="post"
+        oninput="bonus.value = parseInt(glas.value) * 2 + ' bravo!'"
+      >
+        <fieldset>
+          <legend>Hrvatski predsjednički izbori</legend>
+          <p>Glasajte za najsimpatičniju osobu</p>
+          <input list="presidents" name="presidents" />
+          <datalist id="presidents">
+            <option value="Kokolinda"></option>
+            <option value="Plenki"></option>
+            <option value="dr.mr.sc. Franjo Tuđman dipl.prof."></option>
+            <option value="Zoki"></option>
+            <option value="Mesić"></option>
+          </datalist>
+          <br />
+          <br />
+          <label for="glas">Koliko glasova želite dati?</label> <br />
+
+          <input
+            type="range"
+            id="glas"
+            name="glas"
+            min="1000"
+            max="1000000000"
+            value="5000000"
+          />
+
+          <br />
+          <br />
+          <label for="bonus">Svaki glas se množi sa 2!</label>
+          <br />
+          <output name="bonus" id="bonus" for="glas"></output>
+          <br />
+          <br />
+          <input type="submit" value="GLASAJ!" id="glasaj" />
+        </fieldset>
+      </form>
+    </div>
+  </body>
+</html>
