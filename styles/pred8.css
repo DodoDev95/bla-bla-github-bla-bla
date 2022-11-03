@@ -1,0 +1,78 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+header {
+  height: 15vh;
+  background-color: aqua;
+}
+li {
+  display: inline-block;
+  padding: 10px;
+}
+main {
+  height: 70vh;
+  background-color: beige;
+}
+h1 {
+  color: red;
+  
+}
+h2 {
+  color: rgba(165, 42, 42, 0.5);
+  
+}
+h1, h2 {
+  text-align: center;
+}
+
+footer {
+  height: 15vh;
+  background-color: aquamarine;
+}
+b {
+  display: inline-block;
+  width: 100%;
+  padding: 15px;
+  border: 5px solid black;
+}
+
+[href] {
+  font-style: italic;
+}
+
+[href="#oSimi"] {
+font-size: 24px;
+}
+/* sadrzi tu rijec*/
+[hhh~="vodi"] {
+ border: 1px;
+}
+/* rijec popracena crticom u class atributu*/
+[class|=header] {
+
+background-color: blue;
+}
+
+/* pocinje sa rijeci*/
+[class^=header] {
+ color: yellow;
+}
+
+/* zavrsava sa rijeci*/
+[hhh$=ma] {
+  background-color: blue;
+}
+
+[hhh*=rot] {
+  font-size: 20px;
+}
+
+b[id$=ha] {
+  color: blue;
+}
+
+p.plavi {
+  text-decoration: underline;
+}
