@@ -1,0 +1,52 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+/*
+#wrapper {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 20% 40% 40%;
+  grid-template-rows: 20% 40% 40%;
+  grid-template-areas: 
+  "header header header"
+  "sidebar gl-vijest gl-vijest"
+  "sidebar v1 v2";
+}
+*/
+
+#wrapper {
+  display: grid;
+  height: 100vh;
+  grid-template: "header header header" 20fr "sidebar gl-vijest gl-vijest"40fr "sidebar v1 v2" 40fr / 20fr 40fr 40fr;
+  row-gap: 10px;
+  column-gap: 15px;
+  /* place items shorthand property za justify i align */
+}
+
+header {
+  grid-area: header;
+  background-color: aqua;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background-color: blue;
+}
+
+.gl-vijest {
+  grid-area: gl-vijest;
+  background-color: brown;
+}
+.v1 {
+  grid-area: v1;
+  background-color: blueviolet;
+}
+.v2 {
+  grid-area: v2;
+  background-color: aquamarine;
+}
+
+
